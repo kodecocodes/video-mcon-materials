@@ -31,7 +31,6 @@
 /// THE SOFTWARE.
 
 import SwiftUI
-import UIKit
 
 /// The file download view.
 struct DownloadView: View {

@@ -53,7 +53,7 @@ Task {
   }
 }
 //: ### Asynchronous functions
-// DONE: Create and call asynchronous func helloPauseGoodbye()
+// DONE: Create asynchronous func helloPauseGoodbye()
 func helloPauseGoodbye() async throws {
   print("\nHello function")  // add " function"
   try await Task.sleep(until: .now + .seconds(1), clock: .continuous)

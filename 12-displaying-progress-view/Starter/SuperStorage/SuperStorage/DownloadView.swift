@@ -31,7 +31,6 @@
 /// THE SOFTWARE.
 
 import SwiftUI
-import UIKit
 
 /// The file download view.
 struct DownloadView: View {
@@ -53,12 +52,8 @@ struct DownloadView: View {
         isDownloadActive: $isDownloadActive,
         downloadSingleAction: {
           // Download a file in a single go.
-          isDownloadActive = true
           Task {
-            do {
-              fileData = try await model.download(file: file)
-            } catch { }
-            isDownloadActive = false 
+            fileData = try await model.download(file: file)
           }
         },
         downloadWithUpdatesAction: {

@@ -31,7 +31,6 @@
 /// THE SOFTWARE.
 
 import SwiftUI
-import UIKit
 import Combine
 
 /// The file download view.

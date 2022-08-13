@@ -93,7 +93,7 @@ struct ListView: View {
       }, message: {
         Text(lastErrorMessage)
       })
-      // TODO: Call model.availableFiles()
+      // DONE: Call model.availableFiles()
       .task {
         guard files.isEmpty else { return }
         do {
